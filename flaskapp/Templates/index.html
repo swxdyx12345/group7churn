@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Predict Customer Churn  Probability within a Month</h2>
+  
+  <form method="POST" action="/">
+    Service Month since Signup:<br>
+    <input type="number" name="tenure" value=70>
+    <br><br>
+    Monthly Charges:<br>
+    <input type="number" name="MonthlyCharges" value=120>
+    <br><br>
+    Number of Internet Services:<br>
+    <input type="number" name="Number_of_InternetServices" value=6>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  {% if pred %}
+  <p>The customer churn probability within a month  is {{ pred }}</p>
+  {% endif %}
+
+  </body>
+</html>
+
